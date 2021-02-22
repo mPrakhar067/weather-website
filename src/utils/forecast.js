@@ -9,7 +9,7 @@ request({url,json:true},(error,{body})=>{
     }else if(body.error){
         callback('unable to find location',undefined)
     }else{
-        callback(undefined,body.current.weather_descriptions[0]+'. It is currently '+body.current.temperature+' degrees out And it feels like '+body.current.feelslike+' degrees here.')
+        callback(undefined,body.current.weather_descriptions[0]+'. It is currently '+body.current.temperature+' degrees out with the humidity '+body.current.humidity+'% ,pressure '+body.current.pressure+'mb and wind_speed '+body.current.wind_speed+' Km/h '+body.current.wind_dir)
     }
 }   )
 }
