@@ -27,14 +27,14 @@ app.get('',(req,res)=>{
         name:'prakhar.'
     })
 })
-app.get('/About',(req,res)=>{
-    res.render('About',{
+app.get('/about',(req,res)=>{
+    res.render('about',{
         title:'About me',
         name:'prakhar.'
     })
 })
-app.get('/Help',(req,res)=>{
-    res.render('Help',{
+app.get('/help',(req,res)=>{
+    res.render('help',{
         helpIt:'Please go for some featured app to get your weather data,If you think there is a mistake here.',
         title:'Help',
         name:'prakhar.'
